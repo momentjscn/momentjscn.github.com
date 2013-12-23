@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Moment.js 中文网</title>
+    <meta name="keywords" content="moment,momentjs">
+    <meta name="description" content="moment,momentjs">
+</head>
+<body>
+Moment.js Moment Timezone Home Docs Tests 
+Moment.js2.4.0
+A javascript date library for parsing, validating, manipulating, and formatting dates.
+moment-with-langs.js moment-with-langs.min.js 30.6kb gz moment.min.js 8.9kb gz  
+bower install -S momentjs
+npm install --save moment
+Install-Package Moment.js
+Formatting dates
+moment().format('MMMM Do YYYY, h:mm:ss a');
+moment().format('dddd');
+moment().format("MMM Do YY");
+moment().format('YYYY [escaped] YYYY');
+moment().format();
+Languages
+Arabic  Moroccan Arabic  Bosnian  Bulgarian  Breton  Catalan  Welsh  Czech  Chuvash  Danish  German  Greek  English  English (Australia) English (Canada)  English (England)  Esperanto  Spanish  Estonian  Basque  Persian  Finnish  Farose  French (Canada)  French  Galician  Hebrew Hindi  Croatian  Hungarian  Bahasa Indonesia  Icelandic  Italian  Japanese  Georgian  Korean  Latvian  Lithuanian  Malayalam  Marathi Bahasa Malaysian  Norwegian  Nepalese  Dutch  Norwegian Nynorsk  Polish  Portuguese (Brazil)  Portuguese  Romanian  Russian  Slovak  Slovenian Albanian  Swedish  Thai  Tagalog (Filipino)  Turkish  Tamaziɣt  Ukrainian  Uzbek  Chinese  Chinese (Traditional)
+Timeago
+moment("20111031", "YYYYMMDD").fromNow();
+moment("20120620", "YYYYMMDD").fromNow();
+moment().startOf('day').fromNow();
+moment().endOf('day').fromNow();
+moment().startOf('hour').fromNow();
+Calendar Time
+moment().subtract('days', 10).calendar();
+moment().subtract('days', 6).calendar();
+moment().subtract('days', 3).calendar();
+moment().subtract('days', 1).calendar();
+moment().calendar();
+moment().add('days', 1).calendar();
+moment().add('days', 3).calendar();
+moment().add('days', 10).calendar();
+Internationalization
+moment().format('L');
+moment().format('l');
+moment().format('LL');
+moment().format('ll');
+moment().format('LLL');
+moment().format('lll');
+moment().format('LLLL');
+moment().format('llll');
+Moment.js is freely distributable under the terms of the MIT license.
+</body>
+</html>
