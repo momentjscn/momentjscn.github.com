@@ -1,51 +1,401 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Moment.js 中文网</title>
-    <meta name="keywords" content="moment,momentjs">
-    <meta name="description" content="moment,momentjs">
-</head>
-<body>
-Moment.js Moment Timezone Home Docs Tests 
-Moment.js2.4.0
-A javascript date library for parsing, validating, manipulating, and formatting dates.
-moment-with-langs.js moment-with-langs.min.js 30.6kb gz moment.min.js 8.9kb gz  
-bower install -S momentjs
-npm install --save moment
-Install-Package Moment.js
-Formatting dates
-moment().format('MMMM Do YYYY, h:mm:ss a');
+	<head>
+		<meta charset="utf-8" />
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="http://gruntjs.cn/assets-momentjs/css/style.css?v=2014-01-04T21:08:23+08:00" />
+		<title>Moment.js 中文网</title><meta name="description" content="Moment.js 中文网，文档、测试、数据。">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?7a7f78c805fbacc7e075d34f153031aa";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+	</head>
+	<body class="is-core is-home">
+		<nav class="top">
+			<a class="logo core-nav" href="/">Moment.js</a>
+			<a class="logo timezone-nav" href="/timezone/">Moment Timezone</a>
+			
+	<a class="home-nav" href="/">首页</a>
+	<a class="docs-nav" href="/docs/">文档</a>
+	<a class="test-nav" href="/test/">测试</a>
+
+			
+		</nav>
+		
+<header>
+	<div class="circle">
+		<div class="face">
+			<div id="hour"></div>
+			<div id="minute"></div>
+			<div id="second"></div>
+		</div>
+	</div>
+	<div class="title">
+		<div class="title-inset">
+			<h1>Moment.js<span>2.5.0</span></h1>
+			
+	<h2>
+		A  javascript date library for
+		parsing, validating, manipulating, and formatting dates.
+	</h2>
+
+		</div>
+	</div>
+</header>
+<aside>
+	<div class="download section">
+                <a class="button source" href="/downloads/moment-with-langs.js">
+			<strong>moment-with-langs.js</strong>
+		</a><a class="button gzipped" href="/downloads/moment-with-langs.min.js">
+			<strong>moment-with-langs.min.js</strong>
+			<span class="filesize">32.6kb</span>
+			<span class="zipped">gz</span>
+		</a><a class="button gzipped" href="/downloads/moment.min.js">
+			<strong>moment.min.js</strong>
+			<span class="filesize">9.2kb</span>
+			<span class="zipped">gz</span>
+		</a>
+	</div>
+	<div class="section">
+		<pre class="shell"><code>bower install -S momentjs</code></pre>
+		<pre class="shell"><code>npm install --save moment</code></pre>
+		<pre class="pm"><code>Install-Package Moment.js</code></pre>
+	</div>
+</aside>
+
+		<div class="container">
+			
+	<div class="examples">
+		<article>
+			<h2>Formatting dates</h2>
+			<div class="input">
+				<pre lang="javascript">moment().format('MMMM Do YYYY, h:mm:ss a');
 moment().format('dddd');
 moment().format("MMM Do YY");
 moment().format('YYYY [escaped] YYYY');
-moment().format();
-Languages
-Arabic  Moroccan Arabic  Bosnian  Bulgarian  Breton  Catalan  Welsh  Czech  Chuvash  Danish  German  Greek  English  English (Australia) English (Canada)  English (England)  Esperanto  Spanish  Estonian  Basque  Persian  Finnish  Farose  French (Canada)  French  Galician  Hebrew Hindi  Croatian  Hungarian  Bahasa Indonesia  Icelandic  Italian  Japanese  Georgian  Korean  Latvian  Lithuanian  Malayalam  Marathi Bahasa Malaysian  Norwegian  Nepalese  Dutch  Norwegian Nynorsk  Polish  Portuguese (Brazil)  Portuguese  Romanian  Russian  Slovak  Slovenian Albanian  Swedish  Thai  Tagalog (Filipino)  Turkish  Tamaziɣt  Ukrainian  Uzbek  Chinese  Chinese (Traditional)
-Timeago
-moment("20111031", "YYYYMMDD").fromNow();
+moment().format();</pre>
+			</div>
+			<div class="output">
+				<pre id="js-format"></pre>
+			</div>
+		</article>
+	</div>
+	<div class="langs">
+		<h2>Languages</h2>
+		
+			<div class="button " data-lang="ar">
+				Arabic
+			</div>
+		
+			<div class="button " data-lang="ar-ma">
+				Moroccan Arabic
+			</div>
+		
+			<div class="button " data-lang="bs">
+				Bosnian
+			</div>
+		
+			<div class="button " data-lang="bg">
+				Bulgarian
+			</div>
+		
+			<div class="button " data-lang="br">
+				Breton
+			</div>
+		
+			<div class="button " data-lang="ca">
+				Catalan
+			</div>
+		
+			<div class="button " data-lang="cy">
+				Welsh
+			</div>
+		
+			<div class="button " data-lang="cs">
+				Czech
+			</div>
+		
+			<div class="button " data-lang="cv">
+				Chuvash
+			</div>
+		
+			<div class="button " data-lang="da">
+				Danish
+			</div>
+		
+			<div class="button " data-lang="de">
+				German
+			</div>
+		
+			<div class="button " data-lang="el">
+				Greek
+			</div>
+		
+			<div class="button " data-lang="en">
+				English
+			</div>
+		
+			<div class="button " data-lang="en-au">
+				English (Australia)
+			</div>
+		
+			<div class="button " data-lang="en-ca">
+				English (Canada)
+			</div>
+		
+			<div class="button " data-lang="en-gb">
+				English (England)
+			</div>
+		
+			<div class="button " data-lang="eo">
+				Esperanto
+			</div>
+		
+			<div class="button " data-lang="es">
+				Spanish
+			</div>
+		
+			<div class="button " data-lang="et">
+				Estonian
+			</div>
+		
+			<div class="button " data-lang="eu">
+				Basque
+			</div>
+		
+			<div class="button " data-lang="fa">
+				Persian
+			</div>
+		
+			<div class="button " data-lang="fi">
+				Finnish
+			</div>
+		
+			<div class="button " data-lang="fo">
+				Farose
+			</div>
+		
+			<div class="button " data-lang="fr-ca">
+				French (Canada)
+			</div>
+		
+			<div class="button " data-lang="fr">
+				French
+			</div>
+		
+			<div class="button " data-lang="gl">
+				Galician
+			</div>
+		
+			<div class="button " data-lang="he">
+				Hebrew
+			</div>
+		
+			<div class="button " data-lang="hi">
+				Hindi
+			</div>
+		
+			<div class="button " data-lang="hr">
+				Croatian
+			</div>
+		
+			<div class="button " data-lang="hu">
+				Hungarian
+			</div>
+		
+			<div class="button " data-lang="id">
+				Bahasa Indonesia
+			</div>
+		
+			<div class="button " data-lang="is">
+				Icelandic
+			</div>
+		
+			<div class="button " data-lang="it">
+				Italian
+			</div>
+		
+			<div class="button " data-lang="ja">
+				Japanese
+			</div>
+		
+			<div class="button " data-lang="ka">
+				Georgian
+			</div>
+		
+			<div class="button " data-lang="ko">
+				Korean
+			</div>
+		
+			<div class="button " data-lang="lv">
+				Latvian
+			</div>
+		
+			<div class="button " data-lang="lt">
+				Lithuanian
+			</div>
+		
+			<div class="button " data-lang="ml">
+				Malayalam
+			</div>
+		
+			<div class="button " data-lang="mr">
+				Marathi
+			</div>
+		
+			<div class="button " data-lang="ms-my">
+				Bahasa Malaysian
+			</div>
+		
+			<div class="button " data-lang="nb">
+				Norwegian
+			</div>
+		
+			<div class="button " data-lang="ne">
+				Nepalese
+			</div>
+		
+			<div class="button " data-lang="nl">
+				Dutch
+			</div>
+		
+			<div class="button " data-lang="nn">
+				Norwegian Nynorsk
+			</div>
+		
+			<div class="button " data-lang="pl">
+				Polish
+			</div>
+		
+			<div class="button " data-lang="pt-br">
+				Portuguese (Brazil)
+			</div>
+		
+			<div class="button " data-lang="pt">
+				Portuguese
+			</div>
+		
+			<div class="button " data-lang="ro">
+				Romanian
+			</div>
+		
+			<div class="button " data-lang="ru">
+				Russian
+			</div>
+		
+			<div class="button " data-lang="sk">
+				Slovak
+			</div>
+		
+			<div class="button " data-lang="sl">
+				Slovenian
+			</div>
+		
+			<div class="button " data-lang="sq">
+				Albanian
+			</div>
+		
+			<div class="button " data-lang="sv">
+				Swedish
+			</div>
+		
+			<div class="button " data-lang="th">
+				Thai
+			</div>
+		
+			<div class="button " data-lang="tl-ph">
+				Tagalog (Filipino)
+			</div>
+		
+			<div class="button " data-lang="tr">
+				Turkish
+			</div>
+		
+			<div class="button " data-lang="tzm-la">
+				Tamaziɣt
+			</div>
+		
+			<div class="button " data-lang="uk">
+				Ukrainian
+			</div>
+		
+			<div class="button " data-lang="uz">
+				Uzbek
+			</div>
+		
+			<div class="button active" data-lang="zh-cn">
+				Chinese
+			</div>
+		
+			<div class="button " data-lang="zh-tw">
+				Chinese (Traditional)
+			</div>
+		
+	</div>
+	<div class="examples">
+		<article>
+			<h2>Timeago</h2>
+			<div class="input">
+				<pre lang="javascript">moment("20111031", "YYYYMMDD").fromNow();
 moment("20120620", "YYYYMMDD").fromNow();
 moment().startOf('day').fromNow();
 moment().endOf('day').fromNow();
-moment().startOf('hour').fromNow();
-Calendar Time
-moment().subtract('days', 10).calendar();
+moment().startOf('hour').fromNow();</pre>
+			</div>
+			<div class="output">
+				<pre id="js-from-now"></pre>
+			</div>
+		</article>
+		<article>
+			<h2>Calendar Time</h2>
+			<div class="input">
+				<pre lang="javascript">moment().subtract('days', 10).calendar();
 moment().subtract('days', 6).calendar();
 moment().subtract('days', 3).calendar();
 moment().subtract('days', 1).calendar();
 moment().calendar();
 moment().add('days', 1).calendar();
 moment().add('days', 3).calendar();
-moment().add('days', 10).calendar();
-Internationalization
-moment().format('L');
+moment().add('days', 10).calendar();</pre>
+			</div>
+			<div class="output">
+				<pre id="js-calendar"></pre>
+			</div>
+		</article>
+		<article>
+			<h2>Internationalization</h2>
+			<div class="input">
+				<pre lang="javascript">moment().format('L');
 moment().format('l');
 moment().format('LL');
 moment().format('ll');
 moment().format('LLL');
 moment().format('lll');
 moment().format('LLLL');
-moment().format('llll');
-Moment.js is freely distributable under the terms of the MIT license.
-</body>
+moment().format('llll');</pre>
+			</div>
+			<div class="output">
+				<pre id="js-lang"></pre>
+			</div>
+		</article>
+	</div>
+
+		</div>
+		<footer>
+			<p>Moment.js 中文网</p>
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="http://gruntjs.cn/assets-momentjs/js/global.min.js?v=2014-01-04T21:08:23+08:00"></script>
+		
+	<script src="http://gruntjs.cn/assets-momentjs/js/core-home.js?v=2014-01-04T21:08:23+08:00"></script>
+
+
+	</body>
 </html>
